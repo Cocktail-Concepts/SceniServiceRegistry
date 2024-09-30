@@ -21,6 +21,7 @@ public class SecurityConfig {
                         authorizeRequests
                                 .anyRequest().authenticated()
                 )
+                .cors(c->c.disable())
                 .csrf(csrf -> csrf.disable()).httpBasic(Customizer.withDefaults());  // Enable HTTP Basic authentication
 
         return http.build();

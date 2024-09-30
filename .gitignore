@@ -20,7 +20,7 @@ application.yml
 *.iws
 *.iml
 *.ipr
-
+META-INF/
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
